@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body >
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light yellowbar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,27 +21,183 @@
             <button class="btn btn-primary">LogOut</button>
         </nav>
     </header>
-    <aside>
-    <nav class="col-sm-3 ">
-  <div class="col-sm-12 " id="navbarNav">
-    <!-- <a href="index.html"><img id="home-logo" src="../media/logo-prueba.jpg" alt="Logo de Animanoir"></a>  -->
-    <ul>
-      <li class="fuente-fjalla ul-personalizada">Animación</li>
-      <li class="fuente-fjalla ul-personalizada">Ilustración</li>
-      <li class="fuente-fjalla ul-personalizada">Interacción</li>
-      <br>
-      <li class="fuente-fjalla ul-personalizada">Blog</li>
-      <br>
-      <li class="fuente-fjalla ul-personalizada"><a href="acerca.html">Acerca</a></li>
-      <li class="fuente-fjalla ul-personalizada">Contacto</li>
-    </ul>
-  </div>
-</nav>
-    </aside>
-<div class="container">
-  <!-- Content here -->
+    <div class="container-fluid">
+        <div class="row">
+         <nav class="col-sm-3 menuside" id="navbarNav">
+          <div class="col-sm-12 " >
+            <div  class="brand mx-auto">
+            <a href="index.html" class="brand mx-auto"><img id="home-logo" src="img/ui-sam.jpg" alt="Logo de Animanoir"><br>
+                <h3>Marcel Newman</h3></a> 
+            </div>
+            <ul class="barmenu">
+            <br>
+              <li><a href="index.html">Ui General</a></li>
+              <li><a href="uibuttons.html">Ui Buttons</a></li>
+              <li><a href="basictab.html">Basic tables</a></li>
+              <li><a href="form.html">Form components</a></li>
+              <li><a href="todo.html">To do list</a></li>
+            </ul>
+          </div>
+         </nav>
+  
+     <div class="col-sm-9 contenido">
+        <div class="row">
+            <div class="col ">
+                <div class="card">
+                    <p>> Basic Progresss Bar</p>
+                      <div class="progress">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                </div>
+                <div class="card">
+                    <p>> Stripped Progresss Bar</p>
+                      <div class="progress">
+                          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                </div>
+                <div class="card">
+                    <p>> Animated Progresss Bar</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    </div>
+                </div>
+                 <div class="card">
+                    <p>> Modal Example</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                      Launch demo modal
+                    </button>
+
+                </div>
+                <div class="card">
+                    <p>> Gritter Examples</p>
+                    <div class="badging">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-light">Light</button>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                 <div class="card">
+                <p>> Alerts Examples</p>
+                  Copy
+                <div class="alert alert-primary" role="alert">
+                  A simple primary alert—check it out!
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                  A simple secondary alert—check it out!
+                </div>
+                <div class="alert alert-success" role="alert">
+                  A simple success alert—check it out!
+                </div>
+                <div class="alert alert-danger" role="alert">
+                  A simple danger alert—check it out!
+                </div>
+                <div class="alert alert-warning" role="alert">
+                  A simple warning alert—check it out!
+                </div>
+                <div class="alert alert-info" role="alert">
+                  A simple info alert—check it out!
+                </div>
+                <div class="alert alert-light" role="alert">
+                  A simple light alert—check it out!
+                </div>
+                <div class="alert alert-dark" role="alert">
+                  A simple dark alert—check it out!
+                </div>
+            </div>
+            <div class="card">
+                <p>> Dissmisable alert</p>
+                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+            </div>
+            <div class="card ">
+                <p>> Badges</p><br>
+                <div class="badging">
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-secondary">Secondary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-info">Info</span>
+                    <span class="badge badge-light">Light</span>
+                    <span class="badge badge-dark">Dark</span>
+                </div>
+            </div>
+             <div class="card">
+                <p>> labels</p>
+                <div class="badging">
+                <span class="badge badge-pill badge-primary">Primary</span>
+                <span class="badge badge-pill badge-secondary">Secondary</span>
+                <span class="badge badge-pill badge-success">Success</span>
+                <span class="badge badge-pill badge-danger">Danger</span>
+                <span class="badge badge-pill badge-warning">Warning</span>
+                <span class="badge badge-pill badge-info">Info</span>
+                <span class="badge badge-pill badge-light">Light</span>
+                <span class="badge badge-pill badge-dark">Dark</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</div>
 </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
