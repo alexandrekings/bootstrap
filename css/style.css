@@ -1,0 +1,41 @@
+/*general*/
+body{
+    font-family: 'arial', serif;
+    background-image: url("../img/graph-tile.png");
+    background-repeat: repeat;
+        padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+.navbar {
+
+    flex-direction: row;
+}
+.navbar-brand{
+    margin-left: 1em;
+}
+
+.navbar .btn {
+    align-self : flex-end;
+}
+@media screen and (max-width:480px){
+   
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+   
+}
+    
+@media screen and (min-width:768px) and (max-width:1023px){
+   
+}
+
+@media (min-width: 992px)
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+}
+@media all and (min-width:1024px){
+   
+}
